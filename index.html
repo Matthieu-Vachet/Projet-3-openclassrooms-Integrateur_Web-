@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -25,6 +25,27 @@
         </nav>
     </header>
     <main>
+        <section class="recherche-section">
+            <h1 class="recherche-titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+
+            <form class="recherche-form" action="#" method="get" >
+                <label class="localisation-icone">
+                    <i class="fa-solid fa-location-dot"></i>
+                </label>
+                <input class="recherche-input" type="search" name="localisation" id="localisation"
+                    placeholder="Marseille, France">
+                <input class="recherche-submit submit-desktop" type="submit" value="Rechercher">
+                <div class="recherche-submit submit-smartphone">
+                    <i class="fa-solid fa-magnifying-glass">
+                        <input type="submit" value="">
+                    </i>
+                </div>
+            </form>
+        </section>
+
+
+
         <div class="hebergements-and-populaires">
             <section class="hebergements"></section>
             <section class="populaires">
