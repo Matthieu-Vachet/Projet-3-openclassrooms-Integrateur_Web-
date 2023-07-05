@@ -171,12 +171,12 @@ header .navbar .navbar-link:focus {
   transition: background-color 0.5s, color 0.5s;
 }
 
-.recherche-section .recherche-form .recherche-submit:hover{
-    background-color: var(--grey);
-    color: var(--main-color);
+.recherche-section .recherche-form .recherche-submit:hover {
+  background-color: var(--grey);
+  color: var(--main-color);
 }
 
-.submit-smartphone {
+.recherche-section .submit-smartphone {
   display: none;
 }
 
@@ -292,22 +292,22 @@ header .navbar .navbar-link:focus {
 
 /******************** SECTION HEBERGEMENTS ********************/
 
-.hebergements {
+.hebergements-and-populaires .hebergements {
   width: 65%;
 }
 
-.hebergements-title {
+.hebergements-and-populaires .hebergements .hebergements-title {
   display: flex;
   flex-wrap: wrap;
 }
 
-.hebergements-cards {
+.hebergements-and-populaires .hebergements .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.hebergements-cards .card {
+.hebergements-and-populaires .hebergements .hebergements-cards .card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -316,19 +316,19 @@ header .navbar .navbar-link:focus {
   transition: transform 0.5s;
 }
 
-.hebergements-cards .card:hover{
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.hebergements-and-populaires .hebergements .hebergements-cards .card:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.hebergements-cards .card img {
+.hebergements-and-populaires .hebergements .hebergements-cards .card img {
   width: 100%;
   height: 115px;
   border-radius: 20px 20px 0 0;
 }
 
-.hebergements-cards .card-content {
+.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 4px;
@@ -336,44 +336,44 @@ header .navbar .navbar-link:focus {
   flex-wrap: wrap;
 }
 
-.hebergements .card-title {
+.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content .card-txt .card-title {
   margin-top: 4px;
   margin-bottom: 8px;
 }
 
-.hebergements .card-subtitle {
+.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content .card-txt .card-subtitle {
   margin-bottom: 8px;
 }
 
-.hebergements .card-rating {
+.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content .card-rating {
   margin-bottom: 15px;
 }
 
-.hebergements-more {
+.hebergements-and-populaires .hebergements .hebergements-more {
   padding-top: 30px;
 }
 
-.hebergements-more a{
-    transition: color 0.5s;
+.hebergements-and-populaires .hebergements .hebergements-more a {
+  transition: color 0.5s;
 }
 
-.hebergements-more a:hover {
-    color: var(--main-color);
+.hebergements-and-populaires .hebergements .hebergements-more a:hover {
+  color: var(--main-color);
 }
 
 /******************** SECTION POPULAIRE ********************/
-.populaires {
+.hebergements-and-populaires .populaires {
   width: 32%;
 }
 
-.populaires-title {
+.hebergements-and-populaires .populaires .populaires-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.populaires-cards .card {
+.hebergements-and-populaires .populaires .populaires-cards .card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -381,24 +381,24 @@ header .navbar .navbar-link:focus {
   transition: transform 0.5s;
 }
 
-.populaires-cards .card:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.hebergements-and-populaires .populaires .populaires-cards .card:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.populaires-cards img {
+.hebergements-and-populaires .populaires .populaires-cards .card img {
   width: 33%;
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.populaires-cards a {
+.hebergements-and-populaires .populaires .populaires-cards .card a {
   display: flex;
 }
 
-.populaires-cards .card-content {
+.hebergements-and-populaires .populaires .populaires-cards .card .card-content {
   width: 67%;
   padding-left: 15px;
   display: flex;
@@ -408,16 +408,16 @@ header .navbar .navbar-link:focus {
   box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-txt .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-txt .card-subtitle {
   margin: 0;
 }
 
-.populaires-cards .card-rating {
+.hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-rating {
   margin-bottom: 5px;
 }
 
@@ -448,7 +448,7 @@ header .navbar .navbar-link:focus {
   filter: drop-shadow(0px 3px 15px rgb(107, 107, 107));
 }
 
-.activites .activites-cards img {
+.activites .activites-cards .cards-a img {
   display: flex;
   border-radius: 20px 20px 0 0;
   width: 100%;
@@ -463,44 +463,40 @@ header .navbar .navbar-link:focus {
 /******************** SECTION FOOTER ********************/
 
 footer {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 footer section {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    
-    background-color: var(--main-bg-color);
-    
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  background-color: var(--main-bg-color);
 }
 
-
-footer div {
-  
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 15px;
+footer section div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
 }
 
-footer section div li {
-    padding-bottom: 15px;
-    font-size: 1em;
-    font-weight: 400;
+footer section div ul li {
+  padding-bottom: 15px;
+  font-size: 1em;
+  font-weight: 400;
 }
-footer section div a {
-    transition: color 0.5s, border-radius 0.9s;
+footer section div ul a {
+  transition: color 0.5s, border-radius 0.9s;
 }
 
-footer section div a:hover {
-    color: var(--main-color);
-    padding: 5px;
-    border: 1px solid #0065fc;
-    border-radius: 15px;
+footer section div ul a:hover {
+  color: var(--main-color);
+  padding: 5px;
+  border: 1px solid #0065fc;
+  border-radius: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
