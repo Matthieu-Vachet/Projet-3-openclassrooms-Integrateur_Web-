@@ -313,6 +313,13 @@ header .navbar .navbar-link:focus {
   flex-direction: column;
   margin-top: 33px;
   flex: 1;
+  transition: transform 0.5s;
+}
+
+.hebergements-cards .card:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .hebergements-cards .card img {
@@ -363,6 +370,13 @@ header .navbar .navbar-link:focus {
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 33px;
+  transition: transform 0.5s;
+}
+
+.populaires-cards .card:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .populaires-cards img {
