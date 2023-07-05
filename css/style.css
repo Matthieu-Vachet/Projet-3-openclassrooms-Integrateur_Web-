@@ -148,11 +148,11 @@ header .navbar .navbar-link:focus {
 }
 
 .recherche-section .recherche-form .recherche-input::placeholder {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .recherche-section .recherche-form .recherche-input:focus {
-  outline: 2px solid var(--main-color);
+  outline: 1px solid var(--main-color);
 }
 
 .recherche-section .recherche-form .recherche-submit {
@@ -168,6 +168,12 @@ header .navbar .navbar-link:focus {
   color: white;
   border: 1px solid var(--main-color);
   cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.recherche-section .recherche-form .recherche-submit:hover{
+    background-color: var(--grey);
+    color: var(--main-color);
 }
 
 .submit-smartphone {
@@ -395,48 +401,84 @@ header .navbar .navbar-link:focus {
 
 /******************** SECTION ACTIVITES ********************/
 
-.activites-marseille {
+.activites {
+  width: 100%;
   margin-top: 35px;
   margin-bottom: 35px;
-  display: flex;
+  padding: 30px;
 }
 
-.activites-marseille .activites {
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.activites-marseille .activites .activites-cards {
+.activites .activites-cards {
   margin-top: 35px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
-.activites-marseille .activites .activites-cards .cards-a {
-  display: flex;
-  flex-direction: column;
+.activites .activites-cards .cards-a {
+  width: 24%;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
   transition: filter 0.5s;
 }
 
-.activites-marseille .activites .activites-cards .cards-a:hover {
-    filter: drop-shadow(0px 3px 15px rgb(107, 107, 107));
-  }
+.activites .activites-cards .cards-a:hover {
+  filter: drop-shadow(0px 3px 15px rgb(107, 107, 107));
+}
 
-.activites-marseille .activites .activites-cards img {
+.activites .activites-cards img {
+  display: flex;
   border-radius: 20px 20px 0 0;
-  width: 297px;
+  width: 100%;
   height: 380px;
   object-fit: cover;
 }
 
-.activites-marseille .activites .activites-cards .cards-a .cards-content {
+.activites .activites-cards .cards-a .cards-content {
   padding: 20px 19px;
+}
+
+/******************** SECTION FOOTER ********************/
+
+footer {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+    background-color: var(--main-bg-color);
+    
+}
+
+
+footer div {
+  
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+}
+
+footer section div li {
+    padding-bottom: 15px;
+    font-size: 1em;
+    font-weight: 400;
+}
+footer section div a {
+    transition: color 0.5s, border-radius 0.9s;
+}
+
+footer section div a:hover {
+    color: var(--main-color);
+    padding: 5px;
+    border: 1px solid #0065fc;
+    border-radius: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
