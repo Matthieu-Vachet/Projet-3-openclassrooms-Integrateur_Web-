@@ -265,7 +265,7 @@ header .navbar .navbar-link:focus {
 }
 
 .card:hover {
- filter: drop-shadow(0px 3px 15px rgb(107, 107, 107));
+  filter: drop-shadow(0px 3px 15px rgb(107, 107, 107));
 }
 
 .card img {
@@ -393,8 +393,51 @@ header .navbar .navbar-link:focus {
   margin-bottom: 5px;
 }
 
+/******************** SECTION ACTIVITES ********************/
 
+.activites-marseille {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+}
 
+.activites-marseille .activites {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activites-marseille .activites .activites-cards {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.activites-marseille .activites .activites-cards .cards-a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  transition: filter 0.5s;
+}
+
+.activites-marseille .activites .activites-cards .cards-a:hover {
+    filter: drop-shadow(0px 3px 15px rgb(107, 107, 107));
+  }
+
+.activites-marseille .activites .activites-cards img {
+  border-radius: 20px 20px 0 0;
+  width: 297px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.activites-marseille .activites .activites-cards .cards-a .cards-content {
+  padding: 20px 19px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
