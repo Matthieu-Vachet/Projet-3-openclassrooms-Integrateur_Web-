@@ -353,6 +353,14 @@ header .navbar .navbar-link:focus {
   padding-top: 30px;
 }
 
+.hebergements-more a{
+    transition: color 0.5s;
+}
+
+.hebergements-more a:hover {
+    color: var(--main-color);
+}
+
 /******************** SECTION POPULAIRE ********************/
 .populaires {
   width: 32%;
