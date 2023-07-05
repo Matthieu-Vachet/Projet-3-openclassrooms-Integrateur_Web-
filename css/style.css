@@ -292,7 +292,6 @@ header .navbar .navbar-link:focus {
 
 .hebergements-cards {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -302,7 +301,6 @@ header .navbar .navbar-link:focus {
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 33px;
-  gap: 30p;
   flex: 1;
 }
 
@@ -318,7 +316,6 @@ header .navbar .navbar-link:focus {
   margin-top: 4px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 
 .hebergements .card-title {
