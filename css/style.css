@@ -31,7 +31,6 @@ body {
   margin-right: auto;
 }
 
-
 main {
   display: flex;
   flex-direction: column;
@@ -71,15 +70,14 @@ input {
   border: none;
 }
 
-
 /******************** header ********************/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    padding-top: 1px;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-top: 1px;
+}
 
 header .logo {
   width: 61.9px;
@@ -87,26 +85,19 @@ header .logo {
   margin: 30px;
 }
 
-header .navbar {
-  display: flex;
+header .navbar-link {
+  display: inline-flex;
+  padding-top: 16px;
   gap: 68px;
   margin: 0 25px;
 }
 
-header .navbar .navbar-link {
-  display: inline-block;
-  padding-top: 16px;
-}
-
-header .navbar .navbar-link:hover,
-header .navbar .navbar-link:focus {
+header .navbar-link:hover,
+header .navbar-link:focus {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
   padding-top: 14px;
 }
-
-
-
 
 /******************** SECTION DE RECHERCHE ********************/
 
@@ -333,7 +324,11 @@ header .navbar .navbar-link:focus {
   border-radius: 20px 20px 0 0;
 }
 
-.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content {
+.hebergements-and-populaires
+  .hebergements
+  .hebergements-cards
+  .card
+  .card-content {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 4px;
@@ -341,16 +336,33 @@ header .navbar .navbar-link:focus {
   flex-wrap: wrap;
 }
 
-.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content .card-txt .card-title {
+.hebergements-and-populaires
+  .hebergements
+  .hebergements-cards
+  .card
+  .card-content
+  .card-txt
+  .card-title {
   margin-top: 4px;
   margin-bottom: 8px;
 }
 
-.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content .card-txt .card-subtitle {
+.hebergements-and-populaires
+  .hebergements
+  .hebergements-cards
+  .card
+  .card-content
+  .card-txt
+  .card-subtitle {
   margin-bottom: 8px;
 }
 
-.hebergements-and-populaires .hebergements .hebergements-cards .card .card-content .card-rating {
+.hebergements-and-populaires
+  .hebergements
+  .hebergements-cards
+  .card
+  .card-content
+  .card-rating {
   margin-bottom: 15px;
 }
 
@@ -413,16 +425,33 @@ header .navbar .navbar-link:focus {
   box-sizing: border-box;
 }
 
-.hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-txt .card-title {
+.hebergements-and-populaires
+  .populaires
+  .populaires-cards
+  .card
+  .card-content
+  .card-txt
+  .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
 }
 
-.hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-txt .card-subtitle {
+.hebergements-and-populaires
+  .populaires
+  .populaires-cards
+  .card
+  .card-content
+  .card-txt
+  .card-subtitle {
   margin: 0;
 }
 
-.hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-rating {
+.hebergements-and-populaires
+  .populaires
+  .populaires-cards
+  .card
+  .card-content
+  .card-rating {
   margin-bottom: 5px;
 }
 
@@ -506,15 +535,10 @@ footer section div ul a:hover {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-
-
-
-
 /******************** Media queries ********************/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) and (min-width: 769px) {
 
-    /******************** HEBERGEMENTS ET POPULAIRES ********************/
+@media (max-width: 1024px) and (min-width: 769px) {
+  /******************** RESPONSIVE HEBERGEMENTS ET POPULAIRES ********************/
 
   .hebergements-and-populaires {
     flex-direction: column;
@@ -524,10 +548,12 @@ footer section div ul a:hover {
     width: 100%;
   }
 
-  .hebergements-and-populaires .hebergements .hebergements-cards .hebergements-cards {
+  .hebergements-and-populaires
+    .hebergements
+    .hebergements-cards
+    .hebergements-cards {
     width: 100%;
   }
-  
 
   .hebergements-and-populaires .populaires {
     width: 100%;
@@ -544,62 +570,71 @@ footer section div ul a:hover {
     width: 30%;
   }
 
-  .hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-txt .card-title {
+  .hebergements-and-populaires
+    .populaires
+    .populaires-cards
+    .card
+    .card-content
+    .card-txt
+    .card-title {
     font-size: 14px;
   }
 
-  .hebergements-and-populaires .populaires .populaires-cards .card .card-content .card-txt .card-subtitle {
+  .hebergements-and-populaires
+    .populaires
+    .populaires-cards
+    .card
+    .card-content
+    .card-txt
+    .card-subtitle {
     font-size: 13px;
   }
 
-/******************** SECTION FILTRES ********************/
+  /******************** RESPONSIVE FILTRES ********************/
 
-  .section-filtres h2  {
+  .section-filtres h2 {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  /******************** SECTION ACTIVITES ********************/
+  /******************** RESPONSIVE ACTIVITES ********************/
 
   .activites .activites-cards .cards-a img {
-   
     width: 100%;
     height: 200px;
   }
-  
 }
 
-/* Small devices (phones, less than 768px) */
 @media (max-width: 768px) and (min-width: 320px) {
-  
-    header{
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-
-    header nav {
-        width: 100%;
-        display: flex;
-        
-    }
-
-    header .navbar{
-        width: 100%;
-        padding: 0;
-        gap: 0;
-        display: flex;
-        justify-content: space-around;
-        margin: 0px 0px 15px 0px;
-    }
-
-    header .navbar-link{
-        width: 100%;
-    }
-main {
+  body {
+    width: 100% padding 0;
     margin: 0;
-}
+  }
 
+  /******************** RESPONSIVE HEADER ********************/
 
+  header {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+  }
+
+  header .navbar-link {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    border-bottom: 2px solid var(--main-bg-color);
+  }
+
+  header .navbar-link:hover,
+  header .navbar-link:focus {
+    border-top: none;
+    border-bottom: 2px solid var(--main-color);
+  }
 }
