@@ -1,4 +1,6 @@
-/******************** General ********************/
+
+
+/******************** GENERAL ********************/
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
@@ -71,10 +73,11 @@ input {
   border: none;
 }
 
-/******************** header ********************/
+
+
+/******************** SECTION HEADER ********************/
 
 header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -87,16 +90,16 @@ header .logo {
   margin: 30px;
 }
 
+header nav {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 header .navbar-link {
   display: inline-flex;
   padding-top: 16px;
   gap: 68px;
   margin: 0 25px;
-}
-
-header nav {
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 header .navbar-link:hover,
@@ -106,11 +109,11 @@ header .navbar-link:focus {
   padding-top: 14px;
 }
 
-/******************** SECTION DE RECHERCHE ********************/
+
+
+/******************** SECTION RECHERCHE ********************/
 
 .recherche-section {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 35px;
 }
 
@@ -138,7 +141,6 @@ header .navbar-link:focus {
 }
 
 .recherche-section .recherche-form .recherche-input {
-  align-items: center;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -182,6 +184,8 @@ header .navbar-link:focus {
 .recherche-section .submit-smartphone {
   display: none;
 }
+
+
 
 /******************** SECTION FILTRES ********************/
 
@@ -227,6 +231,8 @@ header .navbar-link:focus {
   font-weight: 700;
 }
 
+
+
 /******************** SECTION INFORMATION ********************/
 
 .section-information {
@@ -246,6 +252,8 @@ header .navbar-link:focus {
   margin-right: 10px;
 }
 
+
+
 /******************** HEBERGEMENTS ET POPULAIRES ********************/
 
 .hebergements-and-populaires {
@@ -258,11 +266,9 @@ header .navbar-link:focus {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
-  box-sizing: border-box;
 }
 
 .section-title {
-  margin: 0;
   font-size: 22px;
 }
 
@@ -293,6 +299,8 @@ header .navbar-link:focus {
 .neutral-star {
   color: var(--main-bg-color);
 }
+
+
 
 /******************** SECTION HEBERGEMENTS ********************/
 
@@ -386,7 +394,10 @@ header .navbar-link:focus {
   color: var(--main-color);
 }
 
+
+
 /******************** SECTION POPULAIRE ********************/
+
 .hebergements-and-populaires .populaires {
   width: 32%;
 }
@@ -463,10 +474,11 @@ header .navbar-link:focus {
   margin-bottom: 5px;
 }
 
+
+
 /******************** SECTION ACTIVITES ********************/
 
 .activites {
-  width: 100%;
   margin-top: 35px;
   margin-bottom: 35px;
   padding: 30px;
@@ -501,6 +513,8 @@ header .navbar-link:focus {
 .activites .activites-cards .cards-a .cards-content {
   padding: 20px 19px;
 }
+
+
 
 /******************** SECTION FOOTER ********************/
 
@@ -541,17 +555,29 @@ footer section div ul a:hover {
   border-radius: 15px;
 }
 
+
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /******************** Media queries ********************/
 
+
+
 @media (max-width: 1024px) and (min-width: 769px) {
+
+
+
   /******************** RESPONSIVE FILTRES ********************/
 
   .section-filtres h2 {
     width: 100%;
     margin-bottom: 20px;
   }
+
+
+
   /******************** RESPONSIVE HEBERGEMENTS ET POPULAIRES ********************/
 
   .hebergements-and-populaires {
@@ -604,13 +630,29 @@ footer section div ul a:hover {
     font-size: 13px;
   }
 
+
+
   /******************** RESPONSIVE ACTIVITES ********************/
 
   .activites .activites-cards .cards-a img {
     width: 100%;
     height: 200px;
   }
+
+
+
+  /******************** RESPONSIVE FOOTER ********************/
+
+  footer section div {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
+
+
+
+
+
 
 @media (max-width: 768px) and (min-width: 320px) {
   body {
@@ -618,6 +660,8 @@ footer section div ul a:hover {
     padding: 0;
     margin: 0;
   }
+
+
 
   /******************** RESPONSIVE HEADER ********************/
 
@@ -646,6 +690,8 @@ footer section div ul a:hover {
     border-bottom: 2px solid var(--main-color);
   }
 
+
+
   /******************** RESPONSIVE RECHERCHE ********************/
 
   main {
@@ -667,6 +713,7 @@ footer section div ul a:hover {
 
   .recherche-section .recherche-form .recherche-submit {
     border-radius: 15px;
+    padding-left: 20px;
   }
 
   .recherche-section .submit-desktop {
@@ -682,6 +729,8 @@ footer section div ul a:hover {
     width: 100%;
   }
 
+
+
   /******************** RESPONSIVE FILTRES ********************/
 
   .section-filtres {
@@ -691,11 +740,15 @@ footer section div ul a:hover {
     padding-right: 20px;
   }
 
+
+
   /******************** RESPONSIVE INFORMATION ********************/
 
   .section-information {
     margin: 0 25px 35px 25px;
   }
+
+
 
   /******************** RESPONSIVE HEBERGEMENTS ********************/
 
@@ -716,9 +769,19 @@ footer section div ul a:hover {
     margin-top: 15px;
   }
 
+  .hebergements-and-populaires
+    .hebergements
+    .hebergements-cards
+    .card
+    .card-content {
+    flex-direction: column;
+  }
+
   .hebergements-and-populaires .hebergements .hebergements-cards2 {
     margin-top: 15px;
   }
+
+
 
   /******************** RESPONSIVE POPULAIRES ********************/
 
@@ -731,6 +794,8 @@ footer section div ul a:hover {
   .hebergements-and-populaires .populaires .populaires-cards .card {
     margin-top: 15px;
   }
+
+
 
   /******************** RESPONSIVE ACTIVITES ********************/
 
@@ -746,6 +811,12 @@ footer section div ul a:hover {
   .activites .activites-cards .cards-a {
     width: 100%;
   }
+
+  .activites .activites-cards .cards-a img {
+    height: 141px;
+  }
+
+
 
   /******************** RESPONSIVE FOOTER ********************/
 
