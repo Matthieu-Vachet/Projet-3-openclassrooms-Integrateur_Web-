@@ -17,24 +17,25 @@
   --grey: #d9d9d9;
 }
 
-.fa-color {
-  color: var(--main-color);
-}
-
-.fa-location-dot {
-  color: black;
-}
-
 body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 main {
   display: flex;
   flex-direction: column;
   padding: 0 50px;
+}
+
+.fa-color {
+  color: var(--main-color);
+}
+
+.fa-location-dot {
+  color: black;
 }
 
 h1 {
@@ -73,6 +74,7 @@ input {
 /******************** header ********************/
 
 header {
+    width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -538,6 +540,12 @@ footer section div ul a:hover {
 /******************** Media queries ********************/
 
 @media (max-width: 1024px) and (min-width: 769px) {
+  /******************** RESPONSIVE FILTRES ********************/
+
+  .section-filtres h2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   /******************** RESPONSIVE HEBERGEMENTS ET POPULAIRES ********************/
 
   .hebergements-and-populaires {
@@ -588,13 +596,6 @@ footer section div ul a:hover {
     .card-txt
     .card-subtitle {
     font-size: 13px;
-  }
-
-  /******************** RESPONSIVE FILTRES ********************/
-
-  .section-filtres h2 {
-    width: 100%;
-    margin-bottom: 20px;
   }
 
   /******************** RESPONSIVE ACTIVITES ********************/
@@ -650,7 +651,7 @@ footer section div ul a:hover {
   .recherche-section {
     width: 100%;
     justify-content: center;
-    padding: 0 30px 0 30px;
+    padding: 0 25px 0 25px;
   }
 
   .recherche-section .recherche-form .recherche-input {
@@ -674,4 +675,71 @@ footer section div ul a:hover {
   .recherche-section .recherche-form {
     width: 100%;
   }
+
+  /******************** RESPONSIVE FILTRES ********************/
+
+  .section-filtres {
+    width: 100%;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /******************** RESPONSIVE INFORMATION ********************/
+
+  .section-information {
+    margin: 0 25px 35px 25px;
+  }
+
+  /******************** RESPONSIVE HEBERGEMENTS ********************/
+
+  .hebergements-and-populaires .hebergements {
+    order: 1;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .hebergements-and-populaires .hebergements .hebergements-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hebergements-and-populaires .hebergements .hebergements-cards .card {
+    margin-top: 15px;
+  }
+
+  .hebergements-and-populaires .hebergements .hebergements-cards2 {
+    margin-top: 15px;
+  }
+
+  /******************** RESPONSIVE POPULAIRES ********************/
+
+  .hebergements-and-populaires .populaires {
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+    border-radius: 0;
+  }
+
+  .hebergements-and-populaires .populaires .populaires-cards .card {
+    margin-top: 15px;
+  }
+
+  /******************** RESPONSIVE ACTIVITES ********************/
+
+  .activites {
+    width: 100%;
+  }
+
+  .activites .activites-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activites .activites-cards .cards-a {
+    width: 100%;
+  }
 }
+
+
